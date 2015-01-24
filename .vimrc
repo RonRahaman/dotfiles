@@ -24,8 +24,8 @@ set foldmethod=syntax   " Fold with syntax items
 set diffopt+=iwhite     " Ignore whitespace in diff mode
 
                         " INVISIBLE CHARS
-set list                " Set 'list' mode
-set listchars=tab:▸\    " Set two characters used to show a tab
+" set list              " Set 'list' mode
+" set listchars=tab:▸\  " Set two characters used to show a tab
 
 " Remap <C-a>, because I use it for screen and tmux
 map <C-a> <Esc>
