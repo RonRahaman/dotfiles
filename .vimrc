@@ -13,8 +13,8 @@ set softtabstop=2       " # of spaces used for <Tab> in insert mode
 set tabstop=2           " # of spaces used to display an existing <Tab>
 
                         " SYNTAX HIGHLIGHTING, INDENTING, AND FOLDING
-" syntax on               " Syntax highlighting with user's current colors
-syntax enable          " Syntax highlighting with Vim's default colors
+syntax on               " Syntax highlighting with user's current colors
+" syntax enable          " Syntax highlighting with Vim's default colors
 filetype plugin on      " Load plugin files for specific filetype
                         " (eg, load ~/.vim/ftplugin/python.vim for *.python)
 filetype indent on      " Load the indent file for a specific filetype
