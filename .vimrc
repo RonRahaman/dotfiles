@@ -66,3 +66,8 @@ let g:SuperTabClosePreviewOnPopupClose = 1
 
 " Syntastic
 let g:syntastic_check_on_open = 1
+
+" vim-colors-solarized
+let g:solarized_termtrans = 1
+set background=dark
+colorscheme solarized
