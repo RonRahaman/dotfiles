@@ -52,6 +52,7 @@ let g:tex_flavor='latex'          " Default to 'tex' instead of 'plaintex'
 " Force filetype detection for unusual extenstions
 autocmd BufReadPost,BufRead,BufNewFile *.okl set filetype=cpp
 autocmd BufReadPost,BufRead,BufNewFile *.md  set filetype=markdown
+autocmd BufNewFile,BufRead,BufEnter *.cpp,*.hpp set omnifunc=omni#cpp#complete#Main
 
 " ===============================================================
 " THIRD-PARTY PLUGINS
@@ -80,7 +81,10 @@ let g:syntastic_check_on_wq = 0
 let g:solarized_termtrans = 1
 set background=dark
 colorscheme solarized
+set t_Co=16
 
 " delimitMate
 let delimitMate_autoclose = 1
+let delimitMate_expand_cr = 2
+let delimitMate_expand_space = 1
 " imap <C-j> <Plug>delimitMateS-Tab " Avoid conflict with SuperTab
