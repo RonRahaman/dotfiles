@@ -63,6 +63,8 @@ execute pathogen#infect()
 " SuperTab
 let g:SuperTabDefaultCompletionType = "context"
 let g:SuperTabClosePreviewOnPopupClose = 1
+"let g:SuperTabMappingForward = '<C-nul>'     " Avoid conflict w/ delimitMate
+let g:SuperTabMappingBackward = '<S-C-nul>'   " Avoid conflict w/ delimitMate
 
 " Syntastic
 " set statusline+=%#warningmsg#
@@ -78,3 +80,7 @@ let g:syntastic_check_on_wq = 0
 let g:solarized_termtrans = 1
 set background=dark
 colorscheme solarized
+
+" delimitMate
+let delimitMate_autoclose = 1
+" imap <C-j> <Plug>delimitMateS-Tab " Avoid conflict with SuperTab
