@@ -6,6 +6,8 @@
 set laststatus=2        " Last window always has a status line
 set ruler               " Show cursor position in status line
 
+set nu                  " Line numbers
+
                         " TABS
 set expandtab           " Use spaces to insert a <Tab>
 set shiftwidth=2        " # of spaces for each auto- and re-indent
@@ -76,11 +78,10 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
-
-" vim-colors-solarized
-let g:solarized_termtrans = 1
+" base16 color scheme
+let base16colorspace=256
 set background=dark
-colorscheme solarized
+colorscheme base16-tomorrow
 set t_Co=16
 
 " delimitMate
